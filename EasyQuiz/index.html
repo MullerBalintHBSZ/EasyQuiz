@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="easy_quiz.css">
+      <script src="easy_quiz.js"></script>
+      <title>Easy Quiz</title>
+  </head>
+  <body onload="Start()" >
+    <p><b>Ha a kérdés számláló mindkét<br> oldalán egyenlő a szám akkor kattintson<br>még egyszer a válasz gombokra <br> ha szeretné látni az elért pontját!</b></p>
+      <div id="container">
+      <div id="top">
+        <div id="question"></div>
+        <div id="side">
+          <div id="total" onchange="Ansver()"></div>
+        </div>
+      </div>
+      <div class="grid">
+        <button id="ansver1" class="box" onclick="Ansver(1)"></button>
+        <button id="ansver2" class="box" onclick="Ansver(2)"></button> <br>
+        <button id="ansver3" class="box" onclick="Ansver(3)"></button>
+        <button id="ansver4" class="box" onclick="Ansver(4)"></button>
+      </div>
+    </div>
+  </body>
+</html>
